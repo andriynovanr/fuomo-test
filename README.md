@@ -62,14 +62,3 @@ Selector dan aksi yang berhubungan dengan halaman registrasi dipisahkan ke dalam
 | 4   | Password tidak memenuhi kriteria | ❌ Negatif | Indikator warna (merah/hijau) untuk panjang, huruf besar, huruf kecil |
 | 5   | Email sudah terdaftar            | ❌ Negatif | Pesan error duplikat email                                            |
 | 6   | Registrasi dengan data valid     | ✅ Positif | Modal pilih role muncul → redirect ke dashboard                       |
-
-### Data Test
-
-- **Positive test**: Menggunakan nama dan email unik berbasis timestamp (`Date.now()`) supaya test bisa dijalankan berulang kali tanpa konflik data.
-- **Duplicate email test**: Menggunakan `test@gmail.com` yang sudah terdaftar di sistem.
-
-## Teknologi
-
-- **Playwright** v1.58.2
-- **JavaScript** (ESM)
-- Browser: **Chromium** (Desktop Chrome)
