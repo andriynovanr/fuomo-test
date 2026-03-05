@@ -1,6 +1,5 @@
 // Page Object untuk halaman registrasi fuomo.id
 // Semua selector dan aksi terkait form registrasi dikumpulkan di sini
-// agar test file tetap bersih dan mudah di-maintain
 
 export class RegistrationPage {
   constructor(page) {
@@ -72,7 +71,7 @@ export class RegistrationPage {
     await this.continueButton.click();
   }
 
-  // Generate data unik pakai timestamp agar test bisa dijalankan berulang
+  // Generate data unik pakai timestamp agar test bisa dijalankan berulang tanpa konflik 
   static generateUniqueData() {
     const ts = Date.now();
     return {

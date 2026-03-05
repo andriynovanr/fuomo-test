@@ -33,7 +33,7 @@ test.describe('Registrasi Akun - fuomo.id', () => {
 
   test('Gagal registrasi - format email tidak valid', async () => {
     await regPage.fillForm({
-      name: 'QA Tester',
+      name: 'Email Salah Format',
       email: 'email-tanpa-at.com', // format email tanpa @ 
       gender: 'male',
       password: 'SecurePass123',
@@ -92,7 +92,7 @@ test.describe('Registrasi Akun - fuomo.id', () => {
   test('Gagal registrasi - email sudah terdaftar', async () => {
     // Input email yang sudah pernah registrasi sebelumnya
     await regPage.fillForm({
-      name: 'QA Tester',
+      name: 'Email Terdaftar',
       email: 'test@gmail.com', 
       gender: 'male',
       password: 'SecurePass123',
